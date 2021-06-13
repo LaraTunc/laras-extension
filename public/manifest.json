@@ -13,6 +13,18 @@
     "128": "squid.png"
   },
   "permissions": [
-    "activeTab"
-  ]
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "optional_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://*/*"],
+    "js": ["content.js"]
+  }]
 }
