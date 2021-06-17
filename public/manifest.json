@@ -24,7 +24,7 @@
     "service_worker": "background.js"
   },
   "content_scripts": [{
-    "matches": ["https://*/*"],
+    "matches": ["*://*.ssense.com/*"],
     "js": ["content.js"]
   }]
 }

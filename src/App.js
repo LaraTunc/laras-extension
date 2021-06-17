@@ -16,6 +16,10 @@ const App = () => {
       });
   }, []);
 
+  if (!url.includes('ssense.com')) {
+    return <div>This is not the company domain.</div>;
+  }
+
   return (
     <Wrapper>
       <p>
